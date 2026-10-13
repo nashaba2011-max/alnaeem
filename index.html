@@ -11,7 +11,7 @@
 <title>مركز النعيم الثقافي والتراثي</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Kufam:wght@700;800&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@300;400;500;600&family=Reem+Kufi:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@300;400;500;600&family=Reem+Kufi:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: a walk through one gate — arched windows on limestone, then night-sea and teak chambers, RTL throughout */
 :root{
@@ -31,7 +31,6 @@
   --line:rgba(36,22,14,.18);
   --line-dark:rgba(244,234,214,.16);
   --f-ruqaa:"Aref Ruqaa","Noto Naskh Arabic",serif;
-  --f-title:"Kufam","Reem Kufi",system-ui,sans-serif;
   --f-kufi:"Reem Kufi","Readex Pro",system-ui,sans-serif;
   --f-body:"Noto Naskh Arabic","Amiri",serif;
   --f-ui:"Readex Pro",system-ui,sans-serif;
@@ -62,7 +61,7 @@ p{margin:0}
 .bar{position:fixed;inset-inline:0;top:0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:color-mix(in oklab,var(--teak) 88%,transparent);backdrop-filter:saturate(1.2) blur(10px);color:var(--foam);transform:translateY(-110%);transition:transform .6s var(--ease)}
 .bar.show{transform:none}
 .bar-in{display:flex;align-items:center;gap:1.25rem;height:56px;max-width:var(--max);margin-inline:auto;padding-inline:var(--gut)}
-.bar-mark{font-family:var(--f-title);font-weight:800;font-size:1.15rem;white-space:nowrap;text-decoration:none;color:var(--saffron)}
+.bar-mark{font-family:var(--f-ruqaa);font-size:1.35rem;white-space:nowrap;text-decoration:none;color:var(--saffron)}
 .bar nav{display:flex;gap:.25rem;overflow-x:auto;scrollbar-width:none;margin-inline-start:auto;min-width:0}
 .bar nav::-webkit-scrollbar{display:none}
 .bar nav a{font-family:var(--f-ui);font-size:.84rem;text-decoration:none;padding:.4rem .75rem;border-radius:999px;color:var(--on-dark-soft);white-space:nowrap;transition:color .3s,background .3s}
@@ -73,7 +72,7 @@ p{margin:0}
 .gate{position:relative;height:100svh;min-height:600px;background:var(--stone);overflow:hidden}
 .gate-text{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding-inline:var(--gut);padding-block:12vh 8vh;z-index:1}
 .gate-text .in{width:min(48%,560px);margin-inline-start:max(0px,calc((100vw - var(--max))/2))}
-.gate-title{font-family:var(--f-title);font-weight:800;font-size:clamp(3rem,7vw,5.8rem);line-height:1.2;color:var(--teak);letter-spacing:0}
+.gate-title{font-family:var(--f-ruqaa);font-weight:700;font-size:clamp(3.2rem,7.4vw,6rem);line-height:1.15;color:var(--teak);letter-spacing:0}
 .gate-title .w{display:inline-block}
 .gate-sub{font-family:var(--f-kufi);font-weight:500;font-size:clamp(1.5rem,2.6vw,2.2rem);color:var(--hull);margin-top:.35rem;line-height:1.4}
 .gate-tag{font-family:var(--f-kufi);font-size:clamp(1.05rem,1.3vw,1.25rem);margin-top:2rem;color:var(--ink);padding-top:1.1rem;border-top:1px solid var(--line);max-width:30ch}
@@ -312,7 +311,7 @@ section{position:relative}
 /* ---------- footer ---------- */
 footer{background:var(--teak);color:var(--foam);padding-block:clamp(80px,11vw,140px) 48px;text-align:center}
 footer blockquote{margin:0 auto;max-width:30ch;font-family:var(--f-kufi);font-size:clamp(1.4rem,2.8vw,2.3rem);line-height:1.6}
-footer .fm{font-family:var(--f-title);font-weight:800;font-size:clamp(2rem,4vw,3rem);color:var(--saffron);margin-top:3rem}
+footer .fm{font-family:var(--f-ruqaa);font-size:clamp(2rem,4vw,3rem);color:var(--saffron);margin-top:3rem}
 footer .ft2{font-family:var(--f-kufi);color:var(--on-dark-soft)}
 footer .fby{margin-top:2.6rem;padding-top:1.4rem;border-top:1px solid var(--line-dark);font-family:var(--f-ui);font-size:.8rem;color:var(--on-dark-soft);max-width:var(--max);margin-inline:auto}
 
